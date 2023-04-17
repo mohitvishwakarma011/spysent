@@ -103,7 +103,7 @@ router.post('/send',async(req,res)=>{
   sendMail({
     from:emailFrom,
     to:emailTo,
-    subject:"inShare file sharing",
+    subject:"spySent file sharing",
     text:`${emailFrom} shared a e-mail with you.`,
     html: require('../services/emailTemplate')({
       emailFrom: emailFrom,

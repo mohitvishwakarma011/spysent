@@ -13,7 +13,7 @@ async function sendMail({from, to , subject, text,html}){
                             })
 
     let info = await transporter.sendMail({
-                        from : `inShare <${from}>`,
+                        from : `spySent <${from}>`,
                         to,
                         subject,
                         text,
